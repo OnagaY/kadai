@@ -7,7 +7,7 @@ const inputEmail = store.email;
 
 async function sendData() {
   try {
-    const response = await fetch('http://localhost:8080/insert', {
+    const response = await fetch('http://localhost:8080/api/insert', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -30,6 +30,7 @@ async function sendData() {
 
 </script>
 <template>
+  <h1 class ="confirmh1">研修生新規登録確認</h1>
     <div>
     <p class="inp">入力値: {{ inputName }}</p>
     <p class="inp">入力値: {{ inputEmail }}</p>
@@ -42,4 +43,7 @@ async function sendData() {
   </router-link>
 </template>
 <style>
+.confirmh1{
+  margin-top: auto;
+}
 </style>

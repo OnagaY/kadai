@@ -11,9 +11,10 @@ import { defineStore } from 'pinia'
   //    return { count, doubleCount, increment }
   //  })
 
-export const CounterStore = defineStore('another', () => {
+export const CounterStore = defineStore('counter', () => {
 
   const name = ref('')
   const email = ref('')
-  return {name,email}
+  const id = ref('')
+  return {name,email,id}
 })
